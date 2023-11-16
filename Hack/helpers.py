@@ -17,39 +17,39 @@ from telethon.errors.rpcerrorlist import UserNotParticipantError, UserIsBlockedE
 
 
 MENU1 = '''
-A - Check user own groups and channels(PUBLIC ONLY)
+A - Check user own groups and channels(PUBLIC ONLY)⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️
 
-B - Check user all information like phone number, usrname... etc
+B - Check user all information like phone number, usrname... etc⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️
 
-C - Ban all the members from the group
+C - Ban all the members from the group⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️
 
-D - Know user last otp, Use option B first to take number then login
+D - Know user last otp, Use option B first to take number then login⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️
 
-E - Join A Group/Channel/Link via StringSession
+E - Join A Group/Channel/Link via StringSession⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️
 
-F - Leave A Group/Channel via StringSession
+F - Leave A Group/Channel via StringSession⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️
 
-G - Delete A Group/Channel
+G - Delete A Group/Channel⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️
 
-H - Check user two step is eneable or disable
+H - Check user two step is eneable or disable⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️
 '''
 
 MENU2 = '''
-I - Terminate All current active sessions except Your StringSession
+I - Terminate All current active sessions except Your StringSession⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️
 
-J - Delete Account
+J - Delete Account⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️
 
-K - Leave All Groups/Channels
+K - Leave All Groups/Channels⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️
 
-L - Broadcast Buttons
+L - Broadcast Buttons⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️
 
-M - Terminate Current Session
+M - Terminate Current Session⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️
 
-N - Invite All
+N - Invite All⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️
 
-O - Demote a member
+O - Demote a member⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️
 
-P - Promote a member
+P - Promote a member⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️
 '''
 
 BROADCAST_BUTTONS = [[
@@ -173,7 +173,7 @@ def on_callback(data=None):
                         pass
                 else:
                     LOGGER(__name__).error(ERROR_TXT)
-                await e.reply('Some Error occur from bot side. Please report it to @MaybeBotsSupport')
+                await e.reply('Some Error occur from bot side. Please report it to @synax_chats')
 
         bot.add_event_handler(wrap, CallbackQuery(data=data))
 
