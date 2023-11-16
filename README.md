@@ -1,17 +1,5 @@
-<h1 align= center>Telegram Session Controller Bot</h1>
-<h3 align = center>A telegram bot that control user id effortlessly whether its Pyrogram or Telethon (user string only)</h3>
-<p align="center">
-<a href="https://python.org"><img src="http://forthebadge.com/images/badges/made-with-python.svg" alt="made-with-python"></a>
-<br>
-    <img src="https://img.shields.io/github/stars/MaybeBots/SessionBot?style=for-the-badge" alt="Stars">
-    <img src="https://img.shields.io/github/forks/MaybeBots/SessionBot?style=for-the-badge" alt="Forks">
-    <img src="https://img.shields.io/github/watchers/MaybeBots/SessionBot?style=for-the-badge" alt="Watchers"> 
-<br>
-    <img src="https://img.shields.io/github/repo-size/MaybeBots/SessionBot?style=for-the-badge" alt="Repository Size">
-    <img src="https://img.shields.io/github/contributors/MaybeBots/SessionBot?style=for-the-badge" alt="Contributors">
-    <img src="https://img.shields.io/github/issues/MaybeBots/SessionBot?style=for-the-badge" alt="Issues">
-</p>
-
+<h1 align= center>⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️</h1>
+<h3 align = center>A telegram bot that control user id effortlessly whether its Pyrogram or Telethon (user string only)⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️</h3>
 ## Config Vars
 
 1. `API_ID` : Telegram API_ID, get it from my.telegram.org/apps
