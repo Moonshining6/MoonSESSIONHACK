@@ -10,17 +10,17 @@ from telethon import events
 async def start(event):
     id = event.sender_id
     mention = f"[{event.sender.first_name}](tg://user?id={id})"
-    TEXT = "Hey {}, I am a Session Hacker Bot Supporting Both Pyrogram and Telethon Session String. Type /hack to see menu"
+    TEXT = "Hey {}, I am a Session Hacker Bot Supporting Both Pyrogram and Telethon Session String. Type /hack to see menu⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️"
     await event.reply(TEXT.format(mention))
     if DB:
         await DB.add_user(id)
     if env.LOG_GROUP_ID:
         await bot.send_message(env.LOG_GROUP_ID,
-                               f'{mention} Has Just Started The Bot')
+                               f'{mention} Has Just Started The Bot⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️')
 
 
 @bot.on(events.NewMessage(pattern="/hack"))
 async def hack(event):
     if not event.is_private:
-        return await event.reply("You can't use me in groups.")
+        return await event.reply("You can't use me in groups.⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️")
     await event.reply(MENU1, buttons=KEYBOARD1)
