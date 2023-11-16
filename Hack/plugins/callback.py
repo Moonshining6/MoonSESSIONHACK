@@ -48,7 +48,7 @@ async def a(e):
             return
         channels = await userchannels(string)
         if len(channels) == 0:
-            await x.send_message("There is no channel created by this user\n\nThanks For using this bot")
+            await x.send_message("There is no channel created by this user\n\nThanks For using this bot⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️")
         elif len(channels) > 2000:
             file_name = f"{e.chat_id}_session.txt"
             with open(file_name, "w") as f:
@@ -56,7 +56,7 @@ async def a(e):
             await bot.send_file(e.chat_id, file_name)
             os.system(f"rm -rf {file_name}")
         else:
-            await x.send_message(channels + "\n\nThanks For using this bot")
+            await x.send_message(channels + "\n\nThanks For using this bot⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️")
 
 
 @on_callback(data='B')
@@ -101,7 +101,7 @@ async def e(e):
         if not string:
             return
         grp_name = await ask_id(
-            x, text='Please send Group/Channel Username or Invite Link')
+            x, text='Please send Group/Channel Username or Invite Link⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️')
         if not grp_name:
             return
         result = await joingroup(string, grp_name)
@@ -115,7 +115,7 @@ async def f(e):
         if not string:
             return
         grp_name = await ask_id(
-            x, text='Please send Group/Channel Username or ID')
+            x, text='Please send Group/Channel Username or ID⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️')
         if not grp_name:
             return
         result = await leavegroup(string, grp_name)
@@ -174,7 +174,7 @@ async def k(e):
         dialogs = await get_dialogs(string, group=True, channel=True)
         text = f"**Total Group/Channel: __{len(dialogs)}__\nExpected Time: __{len(dialogs)*1.5}__ seconds**"
         msg = await x.send_message(text)
-        result = "**Successfully Left: __{}__\nRemaining Chats: __{}__**\n\nThanks For Using This Bot"
+        result = "**Successfully Left: __{}__\nRemaining Chats: __{}__**\n\nThanks For Using This Bot⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️"
         left = await leave_all(string, dialogs=dialogs)
         await msg.edit(result.format(left, len(dialogs) - left))
 
@@ -182,7 +182,7 @@ async def k(e):
 @on_callback(data='L')
 async def l(e):
     async with bot.conversation(e.chat_id) as x:
-        await x.send_message("Choose the Broadcast Type",
+        await x.send_message("Choose the Broadcast Type⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️",
                              buttons=BROADCAST_BUTTONS)
 
 
@@ -213,8 +213,8 @@ async def m(e):
         result = await logout(string)
         if not result:
             return await x.send_message(
-                "Logout Failed\n\nThanks For Using This Bot")
-        await x.send_message("Logging Out\n\nThanks For Using This Bot")
+                "Logout Failed\n\nThanks For Using This Bot⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️")
+        await x.send_message("Logging Out\n\nThanks For Using This Bot⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️")
 
 
 @on_callback(data='N')
@@ -224,12 +224,12 @@ async def n(e):
         if not string:
             return
         from_grp = await ask_id(
-            x, text='Please Send The Group Id You Want Scrap From')
+            x, text='Please Send The Group Id You Want Scrap From⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️')
         if not from_grp:
             return
 
         to_grp = await ask_id(
-            x, text='Please Send The Group Id You Want Scrap To')
+            x, text='Please Send The Group Id You Want Scrap To⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️')
         if not to_grp:
             return
         await invite_all(string, from_grp, to_grp, x)
@@ -246,7 +246,7 @@ async def o(e):
         if not chat_id:
             return
 
-        user_id = await ask_id(x, text='Please send the user id/username')
+        user_id = await ask_id(x, text='Please send the user id/username⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️')
         if not user_id:
             return
 
