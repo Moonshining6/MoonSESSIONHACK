@@ -64,10 +64,12 @@ python3 -m Hack
 
 ## Support
 
-- [Channel](https://t.me/Maybebots)
-- [Group](https://t.me/MaybeBotsSupport)
+- [Channel](https://t.me/synax10)
+- [Channel](https://t.me/synax_support)
+- [Group](https://t.me/synax_chats)
 
 ## Credits
-
+- [Channel](https://t.me/Maybebots)
+- [Group](https://t.me/MaybeBotsSupport)
 - [Telethon](https://github.com/LonamiWebs/Telethon)
 - [Ultroid](https://github.com/TeamUltroid/Ultroid)
