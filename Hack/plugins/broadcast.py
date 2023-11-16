@@ -9,20 +9,20 @@ from telethon import events, errors
 @bot.on(events.NewMessage(pattern=r"/broadcast\s*([\s\S]*)?"))
 async def broadcast(event):
     if not DB:
-        await event.reply('Add Mongo Url First')
+        await event.reply('Add Mongo Url First⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️')
         return
     if not (event.sender_id in env.SUDOERS):
         return
     text = event.pattern_match.group(1)
     reply = await event.get_reply_message()
     if not (text or reply):
-        return await event.reply('Please Give A Text Or Reply To a Message')
+        return await event.reply('Please Give A Text Or Reply To a Message⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️')
     sent = 0
     ids = await DB.get_users()
 
     msg = await event.reply(
-        "**Processing....\nPlease Dont Delete The Replied Message**"
-    ) if reply else await event.reply('**Processing....**')
+        "**Processing....\nPlease Dont Delete The Replied Message⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️**"
+    ) if reply else await event.reply('**Processing....⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️**')
     for user in ids:
         try:
             await reply.forward_to(user) if reply else await bot.send_message(
