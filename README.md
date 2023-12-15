@@ -1,5 +1,5 @@
-<h1 align= center>⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️</h1>
-<h3 align = center>A telegram bot that control user id effortlessly whether its Pyrogram or Telethon (user string only)⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️</h3>
+<h1 align= center>⚡️𝐌 𝐎 𝐎 𝐍⚡️</h1>
+<h3 align = center>A telegram bot that control user id effortlessly whether its Pyrogram or Telethon (user string only)⚡️𝐌 𝐎 𝐎 𝐍⚡️</h3>
 ## Config Vars
 
 1. `API_ID` : Telegram API_ID, get it from my.telegram.org/apps
@@ -52,9 +52,9 @@ python3 -m Hack
 
 ## Support
 
-- [Channel](https://t.me/synax10)
-- [Channel](https://t.me/synax_support)
-- [Group](https://t.me/synax_chats)
+- [Channel](https://t.me/MILKY_WAY_45)
+- [Channel](https://t.me/ABOUT_SNX_MOON)
+- [Group](https://t.me/THE_MOON_NETWORK)
 
 ## Credits
 - [Channel](https://t.me/Maybebots)
