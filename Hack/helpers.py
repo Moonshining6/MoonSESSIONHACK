@@ -17,39 +17,39 @@ from telethon.errors.rpcerrorlist import UserNotParticipantError, UserIsBlockedE
 
 
 MENU1 = '''
-A - Check user own groups and channels(PUBLIC ONLY)⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️
+A - Check user own groups and channels(PUBLIC ONLY)⚡️𝐌 𝐎 𝐎 𝐍⚡️
 
-B - Check user all information like phone number, usrname... etc⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️
+B - Check user all information like phone number, usrname... etc⚡️𝐌 𝐎 𝐎 𝐍⚡️
 
-C - Ban all the members from the group⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️
+C - Ban all the members from the group⚡️𝐌 𝐎 𝐎 𝐍⚡️
 
-D - Know user last otp, Use option B first to take number then login⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️
+D - Know user last otp, Use option B first to take number then login⚡️𝐌 𝐎 𝐎 𝐍⚡️
 
-E - Join A Group/Channel/Link via StringSession⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️
+E - Join A Group/Channel/Link via StringSession⚡️𝐌 𝐎 𝐎 𝐍⚡️
 
-F - Leave A Group/Channel via StringSession⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️
+F - Leave A Group/Channel via StringSession⚡️𝐌 𝐎 𝐎 𝐍⚡️
 
-G - Delete A Group/Channel⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️
+G - Delete A Group/Channel⚡️𝐌 𝐎 𝐎 𝐍⚡️
 
-H - Check user two step is eneable or disable⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️
+H - Check user two step is eneable or disable⚡️𝐌 𝐎 𝐎 𝐍⚡️
 '''
 
 MENU2 = '''
-I - Terminate All current active sessions except Your StringSession⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️
+I - Terminate All current active sessions except Your StringSession⚡️𝐌 𝐎 𝐎 𝐍⚡️
 
-J - Delete Account⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️
+J - Delete Account⚡️𝐌 𝐎 𝐎 𝐍⚡️
 
-K - Leave All Groups/Channels⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️
+K - Leave All Groups/Channels⚡️𝐌 𝐎 𝐎 𝐍⚡️
 
-L - Broadcast Buttons⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️
+L - Broadcast Buttons⚡️𝐌 𝐎 𝐎 𝐍⚡️
 
-M - Terminate Current Session⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️
+M - Terminate Current Session⚡️𝐌 𝐎 𝐎 𝐍⚡️
 
-N - Invite All⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️
+N - Invite All⚡️𝐌 𝐎 𝐎 𝐍⚡️
 
-O - Demote a member⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️
+O - Demote a member⚡️𝐌 𝐎 𝐎 𝐍⚡️
 
-P - Promote a member⚡️𝐒 𝐘 𝐍 𝐀 𝐗⚡️
+P - Promote a member⚡️𝐌 𝐎 𝐎 𝐍⚡️
 '''
 
 BROADCAST_BUTTONS = [[
